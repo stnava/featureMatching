@@ -5,6 +5,8 @@ get some feature points from similar images &amp; match the images based on thos
 
 depends on ANTs
 
+`# ./featureMatch.sh dimension image1 image2 NFeaturePointsToExtract NFeaturePointsToMatch UseGradientImage `
+
 `./featureMatch.sh 2 data/r16slice.nii.gz data/r16rotpart.nii.gz  400 20  1 `
 
 `./featureMatch.sh 2 data/slide1.nii.gz data/slide2.nii.gz  200 50 0 `
