@@ -39,4 +39,5 @@ temp=`MultiplyImages 3 zblobn1.nii.gz 1 zblobn1.nii.gz `
 temp=`ANTSUseLandmarkImagesToGetAffineTransform zblobn1.nii.gz zblobn2.nii.gz affine zMatchedAffine.txt`
 temp=`WarpImageMultiTransform 3 $b zMatched.nii.gz -R $a  zMatchedAffine.txt `
 MultiplyImages $dim zMatched.nii.gz 1 zMatched.nii.gz
-######
+rm  zneg* z*ffine.txt zmask*  # zblob*
+############################################################################################################
