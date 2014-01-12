@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Featurematching by stnava</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Featurematching</h1>
+        <p>get some feature points from similar images &amp; match the images based on those features</p>
+
+        <p class="view"><a href="https://github.com/stnava/featureMatching">View the Project on GitHub <small>stnava/featureMatching</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/stnava/featureMatching/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/stnava/featureMatching/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/stnava/featureMatching">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="featurematching" class="anchor" href="#featurematching"><span class="octicon octicon-link"></span></a>featureMatching</h1>
+
+<p>get some feature points from similar images &amp; match the images based on those features</p>
+
+<p>depends on ANTs</p>
+
+<p><code># ./featureMatch.sh dimension image1 image2 NFeaturePointsToExtract NFeaturePointsToMatch UseGradientImage</code></p>
+
+<p><code>./featureMatch.sh 2 data/r16slice.nii.gz data/r16rotpart.nii.gz  400 20  1</code></p>
+
+<p><code>./featureMatch.sh 2 data/slide1.nii.gz data/slide2.nii.gz  200 50 0</code></p>
+
+<p><code>./featureMatch.sh 3 data/time1.nii.gz data/time2.nii.gz  400 50 0</code></p>
+
+<p><code>./featureMatch.sh 2 data/mono1.jpg data/mono2.jpg 500 20 1</code></p>
+
+<p>all output starts with letter z and output will be overwritten each time you run featureMatch</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/stnava">stnava</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
